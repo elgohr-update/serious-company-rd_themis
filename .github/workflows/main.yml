@@ -4,8 +4,8 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: textbook/git-checkout-submodule-action@master
       - uses: actions/checkout@master
+      - uses: textbook/git-checkout-submodule-action@master
       - name: Publish to Registry
         uses: elgohr/Publish-Docker-Github-Action@master
         with:
