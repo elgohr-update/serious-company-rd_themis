@@ -4,8 +4,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: "srt32/git-actions@v0.0.3"
-        args: "git submodule update --init --recursive"
+      - uses: textbook/git-checkout-submodule-action@master
       - uses: actions/checkout@master
       - name: Publish to Registry
         uses: elgohr/Publish-Docker-Github-Action@master
